@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Ritz Feliciano" />
+    <meta name="description" content="Your one-stop-furniture-shop" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/utilities.css" />
+    <title>Ritz Home Deco</title>
+</head>
+
+<body>
+    <!-- Navbar -->
+    <div class="navbar">
+        <div class="container flex">
+            <i class="fa-solid fa-couch fa-3x"></i>
+            <div>
+                <h1 class="logo">Ritz Home Deco</h1>
+                <p class="xsm">
+                    SC Realty Bldg. Tanzang Luma 3 E. Aguinado Hi-way 4103 Imus,
+                    Philippines
+                </p>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html"><i class="fa-solid fa-house"></i></a></li>
+                    <li><a href="table.html">Table</a></li>
+                    <li><a href="chair.html">Chair</a></li>
+                    <li><a href="sofa.html">Sofa</a></li>
+                    <li><a href="bed.html">Bed</a></li>
+                    <li><a href="outdoor.html">Outdoor</a></li>
+                    <li>
+                        <a href="contact-us.html"><i class="fa-solid fa-headset"></i></a>
+                    </li>
+                    <!-- Dummy Menu Bar -->
+                    <li>
+                        <a><i class="fa-solid fa-bars"></i></a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+
+    <!-- Showcase -->
+    <section class="showcase py-1">
+        <div class="container grid">
+            <div class="showcase-text">
+                <h1>Welcome to Ritz Home Deco!</h1>
+                <p>
+                    We are a one-stop-shop for all your home decor needs. From furniture
+                    to accessories, we have everything you need to make your house a
+                    home. Browse our collection, get inspired and let us help you create
+                    the home of your dreams. Thank you for choosing Ritz Home Deco!
+                </p>
+                <!-- ref to about us -->
+                <a href="contact-us.html" class="btn btn-outline">Read More</a>
+            </div>
+
+            <div class="showcase-form card">
+                <form name="contact" method="POST" netlify-honeypot="bot-field" data-netlify="true">
+                    <input type="hidden" name="form-name" placeholder="contact" />
+                    <p class="hidden">
+                        <label>Don't fill this out if you're human: <input type="bot-field" /></label>
+                    </p>
+                    <a href="https://www.facebook.com/ritzcarl.feliciano.3" target="_blank">
+                        <image class="showcase-img" src="img/ID.JPG"></image>
+                    </a>
+                </form>
+                <!-- Login Form Draft -->
+                <h2 class="showcase-img-text text-center">Ritz Carl S. Feliciano</h2>
+                <p class="showcase-img-text text-center">CEO of Ritz Home Deco</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Slider -->
+    <section class="container"></section>
+
+    <!-- Footer -->
+    <footer class="footer bg-dark py-5">
+        <div class="container grid grid-5">
+            <div class="footer-title">
+                <i class="fa-solid fa-couch fa-3x"></i>
+                <h1>Ritz Home Deco</h1>
+                <p class="sm">"Design your dream home"</p>
+                <p>Copyright © 2023 Ritz Home Deco</p>
+            </div>
+            <div class="footer-menu">
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="table.html">Table</a></li>
+                        <li><a href="apple.html">Chair</a></li>
+                        <li><a href="asus.html">Sofa</a></li>
+                        <li><a href="hp.html">Bed</a></li>
+                        <li><a href="lenovo.html">Outdoor</a></li>
+                        <li><a href="contact-us.html">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+
+            <div>
+                <!-- Grid Space-->
+            </div>
+
+            <div class="social">
+                <p class="sm text-center">Visit our page</p>
+                <div class="flex">
+                    <a href="https://www.amazon.com/s?i=specialty-aps&bbn=16225011011&rh=n%3A%2116225011011%2Cn%3A1063306&ref=nav_em__nav_desktop_sa_intl_furniture_0_2_17_6"
+                        target="_blank"><i class="fab fa-amazon fa-2x"></i></a>
+                    <a href="https://www.facebook.com/IKEAPhilippinesOfficial" target="_blank"><i
+                            class="fab fa-facebook fa-2x"></i></a>
+                    <a href="https://www.ebay.ph/b/Furniture/3197/bn_1642075" target="_blank"><i
+                            class="fab fa-ebay fa-2x"></i></a>
+                    <a href="https://www.tiktok.com/@ikea" target="_blank"><i class="fab fa-tiktok fa-2x"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="js/script.js"></script>
+</body>
+
+</html>

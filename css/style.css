@@ -1,0 +1,386 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
+
+:root {
+    --primary-color: #047aed;
+    --secondary-color: #1c3fa8;
+    --dark-color: #002240;
+    --light-color: #f4f4f4;
+    --success-color: #5cb85c;
+    --error-color: #d9534f;
+}
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    font-family: 'Lato', sans-serif;
+    color: #333;
+    line-height: 1.6;
+}
+
+ul{
+    list-style-type: none;
+}
+
+a{
+    text-decoration: none;
+    color: #333;
+}
+
+h1,
+h2{
+    font-weight: 300;
+    line-height: 1.2;
+    margin: 10px 0;
+}
+
+hr {
+    margin: 0 25%;
+    color: var(--dark-color);
+
+}
+
+p{
+    margin: 10px 0;
+}
+
+img {
+    width: 100%;
+}
+
+code, 
+pre {
+    background: #333;
+    color: #fff;
+    padding: 10px;
+}
+
+.hidden {
+    visibility: hidden;
+    height: 0;
+}
+
+/* Navbar */
+
+.navbar {
+    background-color: var(--primary-color);
+    color: var(--light-color);
+    height: auto;
+}
+
+.navbar ul{
+    display: flex;
+}
+
+.navbar a{
+    color: var(--light-color);
+    padding: 10px;
+    margin: auto;
+}
+
+.navbar a:hover{
+    border-bottom: 2px var(--light-color) solid;
+}
+
+.navbar .flex{
+    justify-content: space-between;
+}
+
+/* Showcase */
+.showcase {
+    height: auto;
+    background-color: var(--light-color);
+    color: #000;
+    position: relative;
+}
+
+.showcase h1 {
+    font-size: 40px;
+}
+
+.showcase p {
+    margin: 20px 0;
+}
+
+.showcase .grid {
+    overflow: visible;
+    grid-template-columns: 50% 50%();
+    gap: 50px;
+    margin-bottom: 20px;
+}
+
+.showcase-text {
+    animation: slideInFromLeft 1s ease-in;
+}
+
+.showcase-form {
+    position: relative;
+    height: 600px;
+    width: 400px;
+    padding: 20px;
+    z-index: 100;
+    animation: slideInFromRight 1s ease-in;
+}
+
+.showcase-form .form-control {
+    margin: 30px 0;
+}
+
+.showcase-form input[type='text'] ,
+.showcase-form input[type='email'],
+.showcase-form input[type='number'] {
+    border: 0;
+    border-bottom: 1px solid #b4becb;
+    width: 100%;
+    padding: 3px;
+    font-size: 16px;
+    text-transform: uppercase;
+}
+
+.showcase-form input:focus {
+    outline: none;
+}
+
+.showcase img {
+    border-radius: 50%;
+    max-width: auto;
+    max-height: auto;
+}
+
+.showcase-img-text,
+.showcase-form-text {
+    color: var(--light-color);
+}
+
+textarea {
+    width: 100%;
+    height: 100%;
+    border: 1px solid #b4becb;
+    font-family: Arial, Helvetica, sans-serif;
+    resize: none;
+    padding: 10px 10px;
+}
+ 
+/* Contact Number */
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input[type="number"] {
+    -moz-appearance: textfield;
+}
+
+
+/* Furnitures */
+.furniture .flex{
+    flex-wrap: wrap;
+    flex-direction:  row;
+    max-width: 500px;
+}
+
+.furniture .card {
+    text-align: center;
+    margin: 18px 10px 40px;
+    transition: transform 0.2s ease-in;
+    color: var(--light-color);
+}
+
+.furniture .card h4 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.furniture .card:hover {
+    transform: scale(0.98);
+}
+
+/* Footer */
+.footer .footer-title,
+.footer .footer-menu a,
+.footer .social a {
+    margin: 10px 10px;
+}
+
+.fa-amazon:hover {
+    color: #FF9900;
+}
+
+.fa-facebook:hover {
+    color: #1773EA;
+}
+
+.fa-ebay:hover {
+    color: #E53238;
+}
+
+.fa-tiktok:hover {
+    color: #69C9D0;
+}
+
+footer .grid{
+    margin-bottom: 0;
+}
+
+.footer-menu {
+    grid-row: 1 /span 2;
+}
+
+.footer-menu a:hover {
+    border-bottom: 2px #fff solid;
+}
+
+.footer-title {
+    grid-column: 1 / span 2;
+    grid-row: 1/ span 2;
+}
+
+/* Animations */
+@keyframes slideInFromLeft {
+    0%{
+        transform: translateX(-100%);
+    }
+
+    100%{
+        transform: translateX(0);
+    }
+}
+
+@keyframes slideInFromRight {
+    0%{
+        transform: translateX(100%);
+    }
+
+    100%{
+        transform: translateX(0);
+    }
+}
+
+@keyframes slideInFromTop {
+    0%{
+        transform: translateY(-100%);
+    }
+
+    100%{
+        transform: translateX(0);
+    }
+}
+
+@keyframes slideInFromBottom {
+    0%{
+        transform: translateY(100%);
+    }
+
+    100%{
+        transform: translateY(0);
+    }
+}
+
+/* Tablets and under */
+@media(max-width: 768px) {
+    .grid,
+    .showcase .grid {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1f;
+    }
+
+    hr {
+        margin: 0% 100%;
+    }
+
+    .navbar {
+        text-align: center;
+        padding-top: 10px;
+    }
+
+    .navbar .flex {
+        flex-direction: column;
+        justify-content: space-evenly;
+        overflow: hidden;
+    }
+
+    .navbar ul {
+        padding-top: 10px;
+        padding-bottom: 10px;
+        background-color: rgba(0, 0, 0, 0.1);
+    }
+
+    .navbar a {
+        padding-left: 35px;
+        padding-right: 35px;
+    }
+
+    .showcase {
+        height: auto;
+    }
+
+    .showcase-text {
+        text-align: center;
+        margin-top: 40px;
+        animation: slideInFromBottom 1s ease-in;
+    }
+
+    .showcase-form {
+        height: 100%;
+        justify-self: center;
+        margin: auto;
+        animation: slideInFromBottom 1s ease-in;
+    }
+
+    .furniture .container {
+        padding-left: 5%;
+        padding-right: 10%px;
+        padding-bottom: 1%px;
+    }
+    
+    .footer .py-5 {
+        padding: 10px 0;
+    }
+    .footer .grid {
+        gap: 10px;
+        padding: 5px;
+    }
+}
+
+/* Mobile */
+@media(max-width: 500px) {
+    .navbar ul {
+        flex-direction: column;
+    }
+
+    .navbar a {
+        padding-left: 375px;
+        padding-right: 375px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+
+    .showcase-form{
+        width: auto;
+        height: auto;
+    }
+
+    .furniture .container {
+        padding-left: 50px;
+        padding-right: 50px;
+        padding-bottom: 25px;
+    }
+
+    .social .flex {
+        flex-direction: column;
+    }
+
+    .footer .flex {
+        flex-direction: column;
+    }
+}
+
+@media(max-width: 375px){
+}
+
+@media(max-width: 320px) {
+}
