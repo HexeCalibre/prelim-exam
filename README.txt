@@ -2,10 +2,9 @@
 
 Welcome to Ritz Home Deco! This webpage was created using HTML and CSS.
 
-## Getting Started
+## Codes
 
-1. Clone the repository: https://github.com/HexeCalibre/prelim-exam
-2. Open the index.html file in a web browser
+• Clone the repository: https://github.com/HexeCalibre/prelim-exam
 
 ## Live Preview
 
