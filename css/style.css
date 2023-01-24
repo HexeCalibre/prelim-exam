@@ -135,6 +135,10 @@ pre {
     margin: 30px 0;
 }
 
+.showcase-form .logo {
+    border-radius: 0%;
+}
+
 .showcase-form input[type='text'] ,
 .showcase-form input[type='email'],
 .showcase-form input[type='number'] {
